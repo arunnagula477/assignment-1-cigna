@@ -49,4 +49,3 @@ function generateRows(rowContainer,columnTag, rowData, renderKeyOrValue) {
       console.log( "Status: " + status );
       console.dir( xhr );
     });
-    
