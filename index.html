@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.container-fluid {
+	border:1px solid #dedede;
+	border-radius:5px;
+}
+
+th {
+	text-transform:capitalize;
+}
+.randomImage {
+	width:inherit;	
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row justify-content-end">
+		<div class="col-xsm-12 col-md-8 text-md-right">
+		<label class="d-inline-block" for="myselect"><small><strong>Filtering:</strong></small></label>
+
+		<select class="form-control form-control-sm d-inline-block" style="width:auto" id="myselect">
+			<option value="all">All posts</option>
+			<option value="odd">Odd posts</option>
+			<option value="even">Even posts</option>
+		</select>
+		</div>
+		<div class="col-md-4 hidden"></div>
+	</div>
+	<div class="row">
+	<div class="col-xsm-12 order-xsm-1 order-sm-12 order-md-1 col-md-8">
+
+		<table id="myDataTable" class="table table-striped table-bordered">
+			<thead class="thead-dark">
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-xsm-12 order-xsm-12 order-sm-1 order-md-12 col-md-4">
+		<img src="https://picsum.photos/300/600" alt="randomImage" class="randomImage"/>
+	</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</body>
+</html>
